@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./css/newcustomer.css">
+  <script src="./js/newcustomer.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./js/jquery.mask.js"></script>
+</head>
+
+<body>
+  <header>
+    <div>
+      <div class="headerdiv">
+        <nav>
+          <ul>
+            <li>
+              <h2>Novo Cliente</h2>
+            </li>
+            <li><img
+                src="https://play-lh.googleusercontent.com/10RVls3lohQiKhwqcSc6MZohNhguDTPiuPrZ-N3TG6cC4hPPr9PuhsruSXwFwUOCTPI=w240-h480-rw"
+                alt="OS logotipo"></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section>
+      <img src="/resources/person-square.svg" alt="OS logotipo" class="person">
+      <form action="/customers.html">
+        <fieldset>
+          <legend>Novo Cliente</legend>
+          Nome Completo: <input id="nome" type="text"><br>
+          Email: <input type="email" id="email"><br>
+          Cidade: <input id="cidade" type="text"><br>
+          Endereço: <input id="endereco" type="text"><br>
+          Telefone: <input id="telefone" type="text"><br>
+        </fieldset>
+      </form>
+    </section>
+
+    <section>
+      <div class="button" id="btIncluir" onclick="validate()">
+        <img src="/resources/person-add.svg" alt="">
+        <h3>Incluir</h3>
+      </div>
+
+      <div class="button" onclick="navigate('customers')">
+        <img src="/resources/arrow-bar-left.svg" alt="">
+        <h3>Voltar</h3>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

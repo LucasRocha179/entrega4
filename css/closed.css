@@ -1,0 +1,113 @@
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.button img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.button h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #222;
+}
+
+.button:nth-child(1) img {
+  filter: invert(37%) sepia(7%) saturate(93%) hue-rotate(238deg)
+    brightness(108%) contrast(100%);
+}
+
+.button:nth-child(2) img {
+  filter: invert(37%) sepia(7%) saturate(93%) hue-rotate(238deg)
+    brightness(108%) contrast(100%);
+}
+
+.button:nth-child(3) img {
+  filter: invert(37%) sepia(7%) saturate(93%) hue-rotate(238deg)
+    brightness(108%) contrast(100%);
+}
+
+.button:nth-child(4) img {
+  filter: invert(37%) sepia(7%) saturate(93%) hue-rotate(238deg)
+    brightness(108%) contrast(100%);
+}
+
+section {
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+}
+
+footer {
+  background-color: #29292921;
+  color: #000000;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2%;
+}
+
+footer p {
+  margin: 0;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.headerdiv {
+  position: absolute;
+  right: 20px;
+}
+
+header {
+  background-color: #2e6da4;
+  color: #fff;
+  padding: 20px;
+  height: 100px;
+}
+
+img {
+  height: 80px;
+}
+
+ul > li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+}
+
+td, th {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+th {
+  text-align: left;
+  background-color: #f2f2f2;
+}
