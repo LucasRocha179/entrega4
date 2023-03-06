@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     $(document).ready(function() {
         $('#telefone').mask('(00) 00000-0000');
+        $('#cep').mask('00000-000');
     });
 });
 
@@ -11,6 +12,19 @@ function navigate(page) {
 function validarEmail(email) {
   const re = /\S+@\S+\.\S+/;
   return re.test(email);
+}
+
+function validarCep() {
+  var cep = document.getElementById("cep").value;
+      if (cep.length < 8) return;
+      $.getJSON("https://viacep.com.br/ws/" + cep + "/json/", function (data) {
+        if (data.erro) return;
+        document.getElementById("cidade").value = data.localidade;
+        document.getElementById("endereco").value = data.logradouro;
+        document.getElementById("complemento").value = data.complemento;
+        document.getElementById("estado").value = data.uf;
+        document.getElementById("bairro").value = data.bairro;
+      });
 }
 
 function validate() {
